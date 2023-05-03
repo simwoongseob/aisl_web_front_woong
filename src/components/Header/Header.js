@@ -22,8 +22,8 @@ const Header = () => {
   };
 
   return (
-    <div>
-      <Navbar color="light" light expand="md">
+    <>
+      <Navbar color="light" light expand="md" style={{ paddingLeft: 150 }}>
         <NavbarBrand href="/">AI Service Lab</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -53,7 +53,7 @@ const Header = () => {
           </Nav>
         </Collapse>
       </Navbar>
-    </div>
+    </>
   );
 };
 

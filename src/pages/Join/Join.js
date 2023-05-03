@@ -15,30 +15,30 @@ const Join = () => {
     <Container style={{ marginTop: 50, marginBottom: 50 }}>
       <Form>
         <FormGroup>
-          <Label for="exampleEmail">아이디</Label>
-          <Input type="id" name="id" id="id" placeholder="아이디 입력" />
+          <Label for="exampleEmail">ID</Label>
+          <Input type="id" name="id" id="id" placeholder="Enter ID" />
         </FormGroup>
         <FormGroup>
-          <Label for="exampleEmail">이메일</Label>
+          <Label for="exampleEmail">E-mail</Label>
           <Input
             type="email"
             name="email"
             id="exampleEmail"
-            placeholder="이메일 입력"
+            placeholder="Enter E-mail"
           />
         </FormGroup>
         <FormGroup>
-          <Label for="examplePassword">비밀번호</Label>
+          <Label for="examplePassword">Password</Label>
           <Input
             type="password"
             name="password"
             id="examplePassword"
-            placeholder="비밀번호 입력"
+            placeholder="Enter Password"
           />
         </FormGroup>
         <Link to={"/"}>
           <Button color="primary" size="lg" block>
-            회원가입
+            Join
           </Button>
         </Link>
       </Form>
