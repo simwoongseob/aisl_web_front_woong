@@ -18,23 +18,5 @@
 //         ...state,
 //         ad: action.payload || false,
 //       };
-//     case ECCL_CONDITIONS:
-//       return {
-//         ...state,
-//         conditions: action.payload || false,
-//       };
-//     case ECCL_PIPP:
-//       return {
-//         ...state,
-//         pipp: action.payload || false,
-//       };
-
-//     case ECCL_RULE:
-//       return {
-//         ...state,
-//         rule: action.payload || false,
-//       };
-//     default:
-//       return state;
 //   }
 // }

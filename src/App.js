@@ -17,7 +17,7 @@ import FindUserInfo from "./pages/FindUserInfo/FindUserInfo";
 import Intro from "./pages/Intro/Intro";
 import Login from "./pages/Login/Login";
 import Join from "./pages/Join/Join";
-import Board from "./pages/Board/Board";
+import Community from "./pages/Community/Community";
 import Notice from "./pages/Notice/Notice";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
           <Route path="/intro" element={<Intro />} />
           <Route path="/login" element={<Login />} />
           <Route path="/join" element={<Join />} />
-          <Route path="/Board" element={<Board />} />
+          <Route path="/community" element={<Community />} />
           <Route path="/notice" element={<Notice />} />
         </Routes>
       </Layout>
