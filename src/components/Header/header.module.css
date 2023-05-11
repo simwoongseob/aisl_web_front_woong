@@ -2,7 +2,7 @@
   min-height: 280px;
   padding: 24px;
 }
-#components-layout-demo-top .logo {
+.logo {
   float: left;
   width: 120px;
   height: 31px;
@@ -12,4 +12,11 @@
 .ant-row-rtl #components-layout-demo-top .logo {
   float: right;
   margin: 16px 0 16px 24px;
+}
+
+.ant-btn.custom-button-hover:hover {
+  /*.ant-btn only needed if .ant-btn:hover specified elsewhere*/
+  background-color: purple;
+  border: 2px solid orange;
+  border-radius: 4px;
 }
