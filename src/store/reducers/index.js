@@ -1,13 +1,15 @@
 import { combineReducers } from "redux";
 
-// import Main from "./main_reducer";
-// import Manager from './manager_reducer';
-// import Application from './application_reducer';
+import Main from "./main_reducer";
+import User from "./user_reducer";
+import Notice from "./notice_reducer";
+import Community from "./community_reducer";
 
 const rootReducer = combineReducers({
-  // Main,
-  // Manager,
-  // Application
+  Main,
+  User,
+  Notice,
+  Community,
 });
 
 export default rootReducer;

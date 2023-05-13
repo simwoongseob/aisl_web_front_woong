@@ -1,22 +1,21 @@
-// import {
-//   GET_NOTICE,
-//   GET_AD,
-//   ECCL_CONDITIONS,
-//   ECCL_PIPP,
-//   ECCL_RULE,
-// } from "../types";
+import { GET_MAIN, LOGIN, JOIN } from "../types";
 
-// export default function (state = {}, action) {
-//   switch (action.type) {
-//     case GET_NOTICE:
-//       return {
-//         ...state,
-//         notice: action.payload || false,
-//       };
-//     case GET_AD:
-//       return {
-//         ...state,
-//         ad: action.payload || false,
-//       };
-//   }
-// }
+export default function (state = {}, action) {
+  switch (action.type) {
+    case GET_MAIN:
+      return {
+        ...state,
+        main: action.payload || false,
+      };
+    case JOIN:
+      return {
+        ...state,
+        join: action.payload || false,
+      };
+    case LOGIN:
+      return {
+        ...state,
+        login: action.payload || false,
+      };
+  }
+}

@@ -1,43 +1,17 @@
-import { GET_MAIN, JOIN, LOGIN } from "../types";
+import { FIND_EMAIL, FIND_PWD, CHANGE_PWD } from "../types";
 
 import axios from "axios";
 
-// 메인 데이터 가져오기
-export function getMain() {
+// 이메일 찾기
+export function findEmail(data) {
   const request = axios({
     method: "POST",
-    url: process.env.REACT_APP_GET_MAIN,
-    header: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    data: {},
-  })
-    .then((response) => {
-      return response.data;
-    })
-    .catch((err) => {
-      console.log("메인 데이터 에러", err);
-      return false;
-    });
-
-  return {
-    type: GET_MAIN,
-    payload: request,
-  };
-}
-
-// 회원가입
-export function join(data) {
-  const request = axios({
-    method: "POST",
-    url: process.env.REACT_APP_JOIN,
+    url: process.env.REACT_APP_FIND_EMAIL,
     header: {
       "Content-Type": "application/x-www-form-urlencoded",
     },
     data: {
       name: data.name,
-      email: data.email,
-      pwd: data.pwd,
       question: data.question,
       answer: data.answer,
     },
@@ -46,21 +20,50 @@ export function join(data) {
       return response.data;
     })
     .catch((err) => {
-      console.log("회원가입 에러", err);
+      console.log("이메일 찾기 에러", err);
       return false;
     });
 
   return {
-    type: JOIN,
+    type: FIND_EMAIL,
     payload: request,
   };
 }
 
-// 로그인
-export function login(data) {
+// 비밀번호 찾기
+export function findPwd(data) {
   const request = axios({
     method: "POST",
-    url: process.env.REACT_APP_LOGIN,
+    url: process.env.REACT_APP_FIND_PWD,
+    header: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    data: {
+      name: data.name,
+      email: data.email,
+      question: data.question,
+      answer: data.answer,
+    },
+  })
+    .then((response) => {
+      return response.data;
+    })
+    .catch((err) => {
+      console.log("비밀번호 찾기 에러", err);
+      return false;
+    });
+
+  return {
+    type: FIND_PWD,
+    payload: request,
+  };
+}
+
+// 비밀번호 재설정
+export function changePwd(data) {
+  const request = axios({
+    method: "POST",
+    url: process.env.REACT_APP_CHANGE_PWD,
     header: {
       "Content-Type": "application/x-www-form-urlencoded",
     },
@@ -73,12 +76,12 @@ export function login(data) {
       return response.data;
     })
     .catch((err) => {
-      console.log("로그인 에러", err);
+      console.log("비밀번호 재설정 에러", err);
       return false;
     });
 
   return {
-    type: LOGIN,
+    type: CHANGE_PWD,
     payload: request,
   };
 }
