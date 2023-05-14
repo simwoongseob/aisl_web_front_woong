@@ -10,6 +10,7 @@ import {
   Navigate,
   BrowserRouter,
 } from "react-router-dom";
+import ScrollToTop from "./scrollTop";
 
 import Layout from "./pages/Layout/Layout";
 import Main from "./pages/Main/Main";
@@ -24,6 +25,7 @@ import Notice from "./pages/Notice/Notice";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/*" element={<Main />} />

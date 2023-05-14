@@ -1,15 +1,21 @@
 import React, { Component } from "react";
-import type { MenuProps } from "antd";
-import { Button, Dropdown, Space, ConfigProvider, Col, Row } from "antd";
+import {
+  Button,
+  Dropdown,
+  Space,
+  ConfigProvider,
+  Col,
+  Row,
+  MenuProps,
+} from "antd";
 
 import HeaderNavBtn from "./HeaderNavBtn";
-import styled from "styled-components";
 
 const DropdownItemStyle = {
   padding: 10,
 };
 
-const items: MenuProps["items"] = [
+const items = [
   {
     key: "1",
     label: "AIServiceLab",

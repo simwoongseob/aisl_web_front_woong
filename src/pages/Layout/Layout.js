@@ -1,23 +1,3 @@
-// import { Breadcrumb, Layout, Menu, theme } from "antd";
-// import Header from "../../components/Header/Header";
-// import Footer from "../../components/Footer/Footer";
-
-// import styles from "./layout.module.css";
-
-// const LAYOUT = () => {
-//   const {
-//     token: { colorBgContainer },
-//   } = theme.useToken();
-//   return (
-//     <Layout className="layout">
-//       <Header />
-//       <p>asdads</p>
-//       <Footer />
-//     </Layout>
-//   );
-// };
-// export default LAYOUT;
-
 import React, { Component } from "react";
 import { Layout } from "antd";
 import Header from "../../components/Header/Header";
@@ -32,8 +12,9 @@ const LAYOUT = (props) => {
   return (
     <div>
       <Header />
-      <div className={styles.container}>{children}</div>
-      {/* <Footer /> */}
+      <div className={styles.main_container}>{children}</div>
+      <hr />
+      <Footer />
     </div>
   );
 };

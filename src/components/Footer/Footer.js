@@ -1,38 +1,36 @@
 import React, { Component } from "react";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
+import { Row, Col } from "antd";
+import logo from "../../assets/images/yiu_logo_col.jpg";
+import styles from "./footer.module.css";
+import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <div
-      style={{
-        textAlign: "center",
-      }}
-    >
-      Ant Design ©2023 Created by Ant UED
-    </div>
+    <Row justify={"center"}>
+      <Col span={24} flex={"row"}>
+        <div
+          className={styles.footer_content_box}
+          // style={{
+          //   color: "#dee2e6",
+          //   minHeight: "100px",
+          //   backgroundColor: "#2a3037",
+          //   paddingTop: 50,
+          //   paddingBottom: 50,
+          //   flex: "row",
+          //   justifyContent: "center",
+          // }}
+        >
+          <img src={logo} className={styles.logo} />
+          <span className={styles.footer_content_text}>
+            Ai Service Lab <br />
+            Room 7203, 134 Yongindaehak-ro, Cheoin-gu, Yongin-si, Gyeonggi-do,
+            Korea 17092
+            <br />
+            Copyright 2023 YiuAiServiceLab all rights reserved.
+          </span>
+        </div>
+      </Col>
+    </Row>
   );
 };
 export default Footer;
-
-// import React from "react";
-
-// const Footer = () => {
-//   return (
-//     <div
-//       style={{
-//         color: "#000000",
-//         minHeight: "100px",
-//         backgroundColor: "#AAAAAA",
-//         bottom: 0,
-//         paddingTop: 50,
-//         paddingBottom: 50,
-//       }}
-//     >
-//       <p style={{ textAlign: "center" }}>
-//         Copyright 2023. YiuAiServiceLab all rights reserved.
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default Footer;

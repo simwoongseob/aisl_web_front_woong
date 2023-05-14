@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel, ConfigProvider, Col, Row, Image } from "antd";
 
 const contentStyle = {
-  height: "500px",
+  height: "450px",
   color: "#fff",
   textAlign: "center",
   justifyContent: "center",
