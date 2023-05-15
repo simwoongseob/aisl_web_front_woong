@@ -1,0 +1,7 @@
+.table_container {
+  margin: 0 10em;
+}
+
+.table_row:hover {
+  cursor: pointer;
+}

@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import Slide from "react-reveal/Slide";
 import { useNavigate } from "react-router-dom";
+
+import Slide from "react-reveal/Slide";
 import { Container } from "reactstrap";
-import MainCarousel from "./Carousel";
+
+import MainCarousel from "./MainCarousel";
+// import MainCarousel from "./Carousel";
 import MainIntro from "./MainIntro";
 import MainContent from "./MainContent";
+
 import styles from "./main.module.css";
 
 const Main = (props) => {

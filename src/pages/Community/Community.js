@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 import styles from "./community.module.css";
 
+import PageTitle from "../../components/PageTitle/PageTitle";
 import CommunityCalendar from "./Calendar";
 import CommunityPlan from "./Plan";
 import CommunityPost from "./Post";
@@ -9,7 +10,7 @@ import CommunityPost from "./Post";
 const Community = () => {
   return (
     <div style={{ marginBottom: 100 }}>
-      <h1 className={styles.page_title}>Community</h1>
+      <PageTitle title="Community" />
       <h2 className={styles.page_date}>2023-05-13</h2>
 
       <Row style={{ marginLeft: 50, marginRight: 50 }}>

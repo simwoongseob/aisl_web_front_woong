@@ -1,16 +1,16 @@
 export const data_plan = [
   {
-    key: "1",
+    planid: "1",
     date: "2023-05-13",
     contents: "프로젝트 마감",
   },
   {
-    key: "2",
+    planid: "2",
     date: "2023-05-13",
     contents: "프로젝트 마감",
   },
   {
-    key: "3",
+    planid: "3",
     date: "2023-05-13",
     contents: "프로젝트 마감 프로젝트 마감 프로젝트 마감",
   },

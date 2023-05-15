@@ -1,8 +1,10 @@
 import React from "react";
 import { Carousel, ConfigProvider, Col, Row, Image } from "antd";
 
+import styles from "./main.module.css";
+
 const contentStyle = {
-  height: "450px",
+  height: "400px",
   color: "#fff",
   textAlign: "center",
   justifyContent: "center",
@@ -16,10 +18,19 @@ const MainCarousel = () => (
     }}
   >
     <Carousel autoplay>
-      <div>
-        <h3 style={contentStyle}>1</h3>
+      <div style={contentStyle}>
+        <img
+          className={styles.img}
+          src="https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_960_720.jpg"
+        />
       </div>
-      <div>
+      <div style={contentStyle}>
+        <img
+          className={styles.img}
+          src="https://cdn.pixabay.com/photo/2018/12/02/10/07/web-3850917_960_720.jpg"
+        />
+      </div>
+      {/* <div>
         <h3 style={contentStyle}>2</h3>
       </div>
       <div>
@@ -27,7 +38,7 @@ const MainCarousel = () => (
       </div>
       <div>
         <h3 style={contentStyle}>4</h3>
-      </div>
+      </div> */}
     </Carousel>
   </ConfigProvider>
 );

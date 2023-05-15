@@ -1,27 +1,14 @@
 import React from "react";
 import { Row, Col, Calendar, theme, Table, List, Card } from "antd";
 import ContentBox from "./ContentBox";
+
+import { notice_columns_main } from "../../assets/string/notice_columns";
 import { data_notice } from "../../assets/data/notice";
 import { data_community } from "../../assets/data/community";
 
 const onPanelChange = (value, mode) => {
   console.log(value.format("YYYY-MM-DD"), mode);
 };
-
-const columns = [
-  {
-    title: "key",
-    dataIndex: "key",
-  },
-  {
-    title: "title",
-    dataIndex: "title",
-  },
-  {
-    title: "createdAt",
-    dataIndex: "createdAt",
-  },
-];
 
 const MainContent = (props) => {
   const { token } = theme.useToken();
@@ -36,7 +23,7 @@ const MainContent = (props) => {
             onClick={() => props.onClick("./notice")}
             content={
               <Table
-                columns={columns}
+                columns={notice_columns_main}
                 dataSource={data_notice}
                 size="middle"
                 pagination={{ hideOnSinglePage: true }}

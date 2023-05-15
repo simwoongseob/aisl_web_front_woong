@@ -1,6 +1,9 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
+import styles from "./main.module.css";
+import { colors } from "../../assets/colors";
+
 const MainIntro = () => (
   <div
     style={{
@@ -12,8 +15,10 @@ const MainIntro = () => (
     }}
   >
     <Fade top>
-      <h1>AI SERVICE LAB</h1>
+      <h1 style={{ color: colors.yiu_dark_blue }}>AI SERVICE LAB</h1>
+      <div className={styles.hr} />
     </Fade>
+
     <Fade bottom>
       <h3>
         동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세

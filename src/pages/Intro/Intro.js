@@ -1,7 +1,13 @@
 import React from "react";
 
+import PageTitle from "../../components/PageTitle/PageTitle";
+
 const Intro = () => {
-  return <div>소개 페이지</div>;
+  return (
+    <div style={{ marginBottom: 100 }}>
+      <PageTitle title="Introduce" />
+    </div>
+  );
 };
 
 export default Intro;

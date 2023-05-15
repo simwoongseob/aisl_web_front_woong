@@ -8,6 +8,7 @@ import {
   Row,
   MenuProps,
 } from "antd";
+import { colors } from "../../assets/colors";
 
 import HeaderNavBtn from "./HeaderNavBtn";
 
@@ -40,7 +41,7 @@ const Header = () => {
         {/* 랩실 로고 */}
         <Col span={4}>
           <a href="/">
-            <h1>AI Service Lab</h1>
+            <h1 style={{ color: colors.yiu_dark_blue }}>AI Service Lab</h1>
           </a>
         </Col>
 
@@ -68,8 +69,8 @@ const Header = () => {
         {/* 로그인&회원가입 */}
         <Col span={4}>
           <Space>
-            <HeaderNavBtn type={"link"} text="Login" href="./login" />
-            <HeaderNavBtn type={"link"} text="Join" href="./join" />
+            <HeaderNavBtn type={"text"} text="Login" href="./login" />
+            <HeaderNavBtn type={"text"} text="Join" href="./join" />
           </Space>
         </Col>
       </Row>

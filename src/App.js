@@ -21,6 +21,8 @@ import Login from "./pages/Login/Login";
 import Join from "./pages/Join/Join";
 import Community from "./pages/Community/Community";
 import Notice from "./pages/Notice/Notice";
+import NoticeDetail from "./pages/NoticeDetail/Notice";
+import NoticeCreate from "./pages/NoticeCreate/Notice";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <Route path="/join" element={<Join />} />
           <Route path="/community" element={<Community />} />
           <Route path="/notice" element={<Notice />} />
+          <Route path="/notice/detail" element={<NoticeDetail />} />
+          <Route path="/notice/create" element={<NoticeCreate />} />
         </Routes>
       </Layout>
     </BrowserRouter>
