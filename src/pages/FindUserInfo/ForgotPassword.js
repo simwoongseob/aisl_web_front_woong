@@ -18,6 +18,7 @@ const onFinishFailed = (errorInfo) => {
 const ForgotPassword = () => {
   return (
     <div>
+      <h1>웅섭테스트</h1>
       <PageTitle title="Forgot Password" />
       <div className={styles.form_container}>
         <Form
